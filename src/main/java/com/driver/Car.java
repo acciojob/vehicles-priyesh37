@@ -1,6 +1,7 @@
 package com.driver;
 
 public class Car extends Vehicle {
+    private String name;
     private int wheels;
     private String type;
     private int doors;
@@ -75,7 +76,17 @@ public class Car extends Vehicle {
         setType(type);
         setSeats(seats);
     }
+	public Car() {
+    }
 
+    public Car(String name, int wheels, int doors, int gears, boolean isManual, String type){
+        setName(name);
+        setWheels(wheels);
+        setDoors(doors);
+        setGears(gears);
+        setManual(isManual);
+        setType(type);
+    }
     public void changeGear(int newGear){
         setCurrentGear(newGear);
         System.out.println("changeGear method called - The gear is changed to: " + currentGear);

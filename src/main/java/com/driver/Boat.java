@@ -13,7 +13,7 @@ public class Boat implements WaterVehicle {
         this.capacity = capacity;
     }
 
-    public String getName() {
+     public String getVehicleName() {
         return name;
     }
 
@@ -21,7 +21,7 @@ public class Boat implements WaterVehicle {
         this.name = name;
     }
 
-    public int getCapacity() {
+    public int getVehicleCapacity() {
         return capacity;
     }
 
